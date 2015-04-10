@@ -1,0 +1,13 @@
+{
+  "name": "github_redmine",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "PR link to redmine",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/your_repo/*/pull/*"],
+      "js": ["js/lib/jquery.min.js","js/github_redmine.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
